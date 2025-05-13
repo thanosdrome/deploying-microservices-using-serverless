@@ -30,7 +30,6 @@ https://github.com/thanosdrome/dealer_evaluation_backend
 ```bash
 ibmcloud ce application create --name prodlist --image us.icr.io/${SN_ICR_NAMESPACE}/prodlist --registry-secret icr-secret --port 5000 --build-context-dir products_list --build-source https://github.com/thanosdrome/dealer_evaluation_backend
 ```
-![product_details_deploy](https://github.com/user-attachments/assets/a91dafd5-5d0d-4a1b-a72b-05bfb79a6f49)
 
 
 #### 2. Deploy the microservice for Dealer Pricing, which provides API endpoints to retrieve dealer pricing information.
@@ -44,7 +43,6 @@ https://github.com/thanosdrome/dealer_evaluation_backend
 ```bash
 ibmcloud ce application create --name dealerdetails --imageus.icr.io/${SN_ICR_NAMESPACE}/dealerdetails --registry-secret icr-secret --port 8080 --build-context-dir dealer_details --build-source https://github.com/thanosdrome/dealer_evaluation_backend
 ```
-![dealer_details_deploy](https://github.com/user-attachments/assets/3271ce67-e655-472d-be49-4bf5afb589b6)
 
 
 #### You'll get a Deployment URL (Like in screenshots above), Copy and save it 
